@@ -9,9 +9,9 @@ int main()
 
     int n;
     double a;
-    puts("Введите число a:");
+    puts("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ a:");
     scanf("%lf", &a);
-    puts("Введите число n:");
+    puts("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ n:");
     scanf("%d", &n);
 
     double d = a;
@@ -19,15 +19,11 @@ int main()
 
     for (int i = 1; i <= n; i++)
     {
-        if (a + i == 0) puts("Cумма параметров не должна быть равна нулю");
-        else
-        {
-            d *= a + i;
-            res += 1. / d;
-        }
+		d *= a + i;
+        res += 1. / d;
     }
 
-    printf("Результат равен %lf", res);
+    printf("Р РµР·СѓР»СЊС‚Р°С‚ СЂР°РІРµРЅ %lf", res);
 
 	return 0;
 }
